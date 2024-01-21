@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --white: var(#fff);
+  --primary: #217363;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.back-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  gap: 0 0.5rem;
+  background-color: #50d4ba57;
+ 
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
+  padding: 1rem;
+}
+.links ul li a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+  background-color: #fff;
+  padding: 0.2rem 0.5rem;
+}
+
+.links button {
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.15rem;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.links button:hover {
+  transform: scale(1.1);
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem 0;
+  margin-top: 5rem;
+}
+.search h2 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+form {
+  padding: 1rem;
+  gap: 1rem 0;
+  width: 80%;
+  max-width: 35rem;
+  position: relative;
+}
+form input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--primary);
+  font-size: 0.7rem;
+}
+form input:focus {
+  outline: var(--primary) solid 1px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+form input::placeholder {
+  color: var(--primary);
+}
+
+button.find_course {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+button.find_course:hover {
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+}
+
+.category_links {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+  background-color: var(--primary);
+  width: 5rem;
+  height: 5rem;
+  gap: 0.5rem 0;
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 0.58) 0px 7px 29px 0px;
+}
+.category:hover {
+  transform: scale(1.1);
+}
+
+.category img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.category p {
+  font-size: 0.7rem;
+}
